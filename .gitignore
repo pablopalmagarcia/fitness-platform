@@ -1,0 +1,29 @@
+# Virtual Environment
+.venv/
+*.env
+
+# Local database (if it exists)
+db.sqlite3
+
+# Compiled python files/folders
+__pycache__/
+*.py[cod]
+
+# Static or user files
+media/
+
+# Log files 
+*.log
+
+# Temporary and system files
+Thumbs.db
+
+# IDE configurations
+.vscode/
+
+# Packaging and distribution files
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
