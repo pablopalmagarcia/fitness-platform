@@ -5,6 +5,7 @@ The main goal of this project is to develop a backend connected to a basic React
 
 ## Table of Contents
 
+> **TODO: Add docs section and more...**
 - [Description](#description)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -18,10 +19,11 @@ This project aims to provide a fitness platform with functionalities for creatin
 It will include backend APIs built with *Django REST Framework* and a functional frontend developed with *React*.
 
 ## Features
-- CRUD operations for exercises, routines and meals
-- Basic user authentication
-- Responsive frontend layout
-- REST API for the frontend and authorized clients
+
+- CRUD operations for exercises, routines and meals *To do*
+- Basic user authentication 
+- Responsive frontend layout *To do*
+- REST API for the frontend and authorized clients *In progress*
 
 ## Tech Stack
 
@@ -48,9 +50,11 @@ It will include backend APIs built with *Django REST Framework* and a functional
 
 Create a `.env` file in your project root and add:
  - SECRET_KEY=your_secret_key
- - DEBUG=True
+ - DEBUG=True   
+ > **Note:** Set to False in production
  - DATABASE_URL=postgres://user:password@localhost:5432/fitness_db
  - ALLOWED_HOSTS=localhost,127.0.0.1
+ - TOKEN=your_token
 
 ## Installation
 
@@ -60,8 +64,10 @@ Create a `.env` file in your project root and add:
 2. Create and activate a virtual environment:
     python -m venv .venv
     source .venv/bin/activate
+    > **Note:** In case Windows: .venv\Scripts\activate
 3. Install dependencies:
     pip install -r requirements.txt
+> **TODO:** Modify installation steps to match current project
 4. Run database migrations:
     python manage.py migrate
 5. Start the development server:
